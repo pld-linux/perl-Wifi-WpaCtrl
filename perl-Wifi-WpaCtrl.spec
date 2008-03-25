@@ -6,20 +6,18 @@
 %define	pdir	Wifi
 %define	pnam	WpaCtrl
 Summary:	Wifi::WpaCtrl - wpa_supplicant/hostapd control interface library
-#Summary(pl):	
+Summary(pl.UTF-8):	Wifi::WpaCtrl - interfejs do sterowania wpa_supplicantem/hostapd
 Name:		perl-Wifi-WpaCtrl
 Version:	0.02
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-#Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Source0:	http://www.cpan.org/modules/by-authors/id/F/FL/FLORA/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fd6b4d8d3e7c5b785c425c56d15a6015
+URL:		http://search.cpan.org/dist/Wifi-WpaCtrl/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,9 +25,10 @@ This module is a wrapper around wpa_ctrl.[ch] supplied by
 wpa_supplicant. It may be used to communicate with
 wpa_supplicant/hostapd in various ways.
 
-
-# %description -l pl
-# TODO
+%description -l pl.UTF-8
+Ten moduł obudowuje wpa_ctrl.[ch] dostarczane z wpa_supplicantem. Może
+być używany do komunikacji z wpa_supplicantem/hostapd na różne
+sposoby.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
