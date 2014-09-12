@@ -54,6 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %{perl_vendorarch}/Wifi/WpaCtrl.pm
 %dir %{perl_vendorarch}/auto/Wifi/WpaCtrl
-%{perl_vendorarch}/auto/Wifi/WpaCtrl/WpaCtrl.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Wifi/WpaCtrl/WpaCtrl.so
 %{_mandir}/man3/Wifi::WpaCtrl.3pm*
