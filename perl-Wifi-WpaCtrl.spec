@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Wifi
 %define	pnam	WpaCtrl
 Summary:	Wifi::WpaCtrl - wpa_supplicant/hostapd control interface library
